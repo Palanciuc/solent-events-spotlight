@@ -1,0 +1,124 @@
+:root{
+    --primaryColor: #b33a3a;
+    --primaryHover: #980c0c;
+    --secondaryColor: #970505;
+    --secHoverColor: #253b53;
+    --greyColor: #f7f7f7;
+  }
+
+.home{
+    height: 90vh;
+    width: 100%;
+    padding: 5rem 1.5rem;
+    background: linear-gradient(rgba(0,0,1,0.42), rgba(0,0,1,0.549)), url('../Assets/Solent-Conf-Centre-1.jpg');
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    row-gap: 3rem;
+}
+/* Home.css */
+.rainbow-text {
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 200% 100%;
+    animation: rainbow-animation 2s linear infinite;
+  }
+  
+  @keyframes rainbow-animation {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: -100% 0;
+    }
+  }
+  
+
+.spanText,
+.homeTitle,
+.btnn {
+  opacity: 0;
+  transition: opacity 1s ease-in-out; /* Adjust the duration and easing as needed */
+}
+
+.visible {
+  opacity: 1;
+}
+
+.home .spanText{
+    color: white;
+    font-weight: 500;
+}
+
+.home .homeTitle{
+    color: white;
+    padding: 2rem 0;
+    font-size: 40px;
+}
+
+.home .btnn{
+    border: 3px solid white;
+    color: white;
+    font-size: 13px;
+    transition: .3s;
+    width: max-content;
+    border-radius: 10px;
+}
+
+.home .btnn:hover{
+    background: white;
+    color: var(--primaryColor);
+    border: 3px solid white;
+}
+
+@media screen and (min-width: 690px) {
+    .home .homeText {
+        transform: translateX(5rem);
+    }
+
+    .home .spanText {
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .home .homeTitle {
+        color: white;
+        padding: 2rem 0;
+        font-size: 45px;
+    }
+
+    .home .btnn {
+        border: 3px solid white;
+        color: white;
+        font-size: 22px;
+        transition: .3s;
+    }
+}
+
+@media screen and (min-width: 840px) {
+    .home .homeText {
+        transform: translateX(10rem);
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    .home .homeText {
+        transform: translateX(20rem);
+    }
+
+    .home .homeText .spanText {
+        font-size: 25px;
+    }
+
+    .home .homeText .homeTitle {
+        font-size: 70px;
+    }
+
+    .home .homeText .btnn{
+        font-size: 22px;
+    }
+}

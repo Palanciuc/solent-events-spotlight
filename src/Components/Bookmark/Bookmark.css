@@ -1,0 +1,158 @@
+:root{
+    --primaryColor: #b33a3a;
+    --primaryHover: #980c0c;
+    --secondaryColor: #970505;
+    --secHoverColor: #253b53;
+    --greyColor: #f7f7f7;
+  }
+  .bookmarks .secContainer .bookmarkContainer {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .bookmarks .secContainer .bookmarkContainer .singleBookmark {
+    width: 100%;
+    position: relative;
+    border: 1px solid var(--greyColor);
+    padding-bottom: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.4s ease;
+  }
+  
+  .bookmarks .secContainer .bookmarkContainer .singleBookmark:hover {
+    background: var(--greyColor);
+  }
+  
+  .bookmarks .secContainer .bookmarkContainer .singleBookmark .imgDiv {
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .bookmarks .secContainer .bookmarkContainer .singleBookmark .imgDiv img {
+    height: 100%;
+    object-fit: cover;
+    transition: .3s ease-in-out;
+  }
+  
+  .bookmarks .secContainer .bookmarkContainer .singleBookmark .imgDiv:hover img {
+    transform: scale(1.1);
+  }
+  
+  .bookmarks .secContainer .bookmarkContainer .singleBookmark .bookmarkInfo {
+    padding: 0 1rem;
+  }
+  
+  .bookmarks .secContainer .bookmarkContainer .singleBookmark .bookmarkInfo .bookmarkTitle {
+    font-size: 15px;
+    color: var(--primaryColor);
+    font-weight: 600;
+  }
+  
+  .bookmarks .secContainer .bookmarkContainer .singleBookmark .bookmarkInfo .bookmarkTitle .details {
+    font-size: 13px;
+    transform: translateY(-2px);
+  }
+  
+  .bookmarks .secContainer .bookmarkContainer .singleBookmark .bookmarkInfo p {
+    padding-bottom: 1rem;
+  }
+  
+  .bookmarks .secContainer .bookmarkContainer .singleBookmark .bookmarkInfo .btn {
+    color: var(--primaryColor);
+    font-size: 14px;
+    border: 2px solid var(--primaryColor);
+    transition: .3s ease;
+  }
+  
+  .bookmarks .secContainer .bookmarkContainer .singleBookmark .bookmarkInfo .btn:hover {
+    background: var(--primaryColor);
+    color: white;
+    border: 2px solid var(--primaryColor);
+  }
+  
+  .bookmarks .secContainer .bookmarkContainer .singleBookmark .location{
+    position: absolute;
+      padding: 10px;
+      background: var(--primaryColor);
+      left: 0;
+      color: white;
+      font-size: 12px;
+      font-weight: 800;
+      width: 200px; /* Adjust this value to your preferred width */
+      text-align: center; /* To center the text inside */
+      white-space: nowrap; /* To prevent the text from wrapping to the next line */
+  }
+  .bookmarks .secContainer .bookmarkContainer .singleBookmark .date {
+      position: absolute;
+      padding: 10px;
+      background: var(--primaryColor);
+      left: 0;
+      color: white;
+      font-size: 12px;
+      font-weight: 800;
+      border-bottom-right-radius: 10px;
+      width: 200px; /* Adjust this value to your preferred width */
+      text-align: center; /* To center the text inside */
+      white-space: nowrap; /* To prevent the text from wrapping to the next line */
+      text-overflow: ellipsis; /* To show ellipsis (...) for overflow text */
+  }
+  
+  .bookmarks .secContainer .bookmarkContainer .singleBookmark .location {
+      top: 0;
+  }
+  
+  .bookmarks .secContainer .bookmarkContainer .singleBookmark .date {
+      top: calc(15px + 20px); /* Adjusted to position it below the .location */
+  }
+
+@media screen and (min-width: 580px) {
+  .bookmarks .secContainer .bookmarkContainer .singleBookmark{
+          grid-template-columns: repeat(2,1fr);
+          padding-bottom: 0rem;
+  }
+  .bookmarks .secContainer .bookmarkContainer .singleBookmark .imgDiv{
+    height: 100%;
+    width: 100%;
+  }
+  .bookmarks .secContainer .bookmarkContainer .singleBookmark .imgDiv .bookmarkInfo{
+    padding: 1rem;
+  }
+}
+  
+@media screen and (min-width: 580px) {
+  .bookmarks .secContainer .bookmarkContainer .singleBookmark .bookmarkInfo .bookmarkTitle{
+    font-size: 18px;
+  }
+  .bookmarks .secContainer .bookmarkContainer .singleBookmark .bookmarkInfo .bookmarkTitle .details{
+    font-size: 14px;
+    transform: translateY(-2.5px);
+  }
+  .bookmarks .secContainer .bookmarkContainer .singleBookmark .bookmarkInfo .bookmarkTitle .details p{
+    font-size: 14px;
+    line-height: 1.5rem;
+  }
+  .bookmarks .secContainer .bookmarkContainer .singleBookmark .bookmarkInfo .btn {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 1490px) {
+  .bookmarks .secContainer .bookmarkContainer .singleBookmark .bookmarkInfo .bookmarkTitle{
+    font-size: 20px;
+  }
+  .bookmarks .secContainer .bookmarkContainer .singleBookmark .bookmarkInfo .bookmarkTitle .details p{
+    font-size: 15px;
+  }
+  .bookmarks .secContainer .bookmarkContainer .singleBookmark .bookmarkInfo .btn {
+    font-size: 15px;
+    width: max-content;
+  }
+  .bookmarks .secContainer .bookmarkContainer .singleBookmark .bookmarkInfo .bookmarkTitle .details .location {
+    font-size: 40px;
+  }
+  .bookmarks .secContainer .bookmarkContainer .singleBookmark .date {
+    font-size: 40px;
+  }
+}

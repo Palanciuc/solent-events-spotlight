@@ -1,0 +1,162 @@
+.emptyBookmarkPage{
+    font-size: 16px;
+    font-weight: 600;
+}
+.bookmarked .bookmarkedSecContainer .bookmarkedContainer {
+    display: grid;
+    gap: 1rem;
+}
+
+.bookmarked .bookmarkedSecContainer .bookmarkedContainer .singleBookmarked {
+    width: 100%;
+    position: relative;
+    border: 1px solid var(--greyColor);
+    padding-bottom: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+.bookmarked .bookmarkedSecContainer .bookmarkedContainer .singleBookmarked:hover {
+    background: var(--greyColor);
+}
+
+.bookmarked .bookmarkedSecContainer .bookmarkedContainer .singleBookmarked .imgDiv {
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.bookmarked .bookmarkedSecContainer .bookmarkedContainer .singleBookmarked .imgDiv img {
+    height: 100%;
+    object-fit: cover;
+    transition: .3s ease-in-out;
+}
+
+.bookmarked .bookmarkedSecContainer .bookmarkedContainer .singleBookmarked .imgDiv:hover img {
+    transform: scale(1.1);
+}
+
+.bookmarked .bookmarkedSecContainer .bookmarkedContainer .singleBookmarked .bookmarkedInfo {
+    padding: 0 1rem;
+}
+
+.bookmarked .bookmarkedSecContainer .bookmarkedContainer .singleBookmarked .bookmarkedInfo .bookmarkedTitleEvent {
+    font-size: 15px;
+    color: var(--primaryColor);
+    font-weight: 600;
+}
+
+.bookmarked .bookmarkedSecContainer .bookmarkedContainer .singleBookmarked .bookmarkedInfo .bookmarkedTitleEvent .bookmarkedDetails {
+    font-size: 13px;
+    transform: translateY(-2px);
+}
+
+.bookmarked .bookmarkedSecContainer .bookmarkedContainer .singleBookmarked .bookmarkedInfo p {
+    padding-bottom: 1rem;
+}
+
+.bookmarked .bookmarkedSecContainer .bookmarkedContainer .singleBookmarked .bookmarkedInfo .unbookmarkBtn {
+    border: 2px solid var(--primaryColor);
+    padding: 0.5rem 1.5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    position: relative;
+    color: var(--primaryColor);
+    background: transparent;
+    border-radius: 5px;
+}
+
+.bookmarked .bookmarkedSecContainer .bookmarkedContainer .singleBookmarked .bookmarkedInfo .unbookmarkBtn:hover {
+    background: var(--primaryColor);
+    color: white;
+    border: 2px solid var(--primaryColor);
+}
+
+.bookmarked .bookmarkedSecContainer .bookmarkedContainer .singleBookmarked .bookmarkedLocation {
+    position: absolute;
+    padding: 10px;
+    background: var(--primaryColor);
+    left: 0;
+    color: white;
+    font-size: 12px;
+    font-weight: 800;
+    width: 200px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.bookmarked .bookmarkedSecContainer .bookmarkedContainer .singleBookmarked .bookmarkedDate {
+    position: absolute;
+    padding: 10px;
+    background: var(--primaryColor);
+    left: 0;
+    color: white;
+    font-size: 12px;
+    font-weight: 800;
+    border-bottom-right-radius: 10px;
+    width: 200px;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.bookmarked .bookmarkedSecContainer .bookmarkedContainer .singleBookmarked .bookmarkedLocation {
+    top: 0;
+}
+
+.bookmarked .bookmarkedSecContainer .bookmarkedContainer .singleBookmarked .bookmarkedDate {
+    top: calc(15px + 20px);
+}
+
+@media screen and (min-width: 580px) {
+    .bookmarked .bookmarkedSecContainer .bookmarkedContainer .singleBookmarked {
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 0rem;
+    }
+
+    .bookmarked .bookmarkedSecContainer .bookmarkedContainer .singleBookmarked .imgDiv {
+        height: 100%;
+        width: 100%;
+    }
+
+    .bookmarked .bookmarkedSecContainer .bookmarkedContainer .singleBookmarked .imgDiv .bookmarkedInfo {
+        padding: 1rem;
+    }
+}
+
+@media screen and (min-width: 580px) {
+    .bookmarked .bookmarkedSecContainer .bookmarkedContainer .singleBookmarked .bookmarkedInfo .bookmarkedTitleEvent {
+        font-size: 18px;
+    }
+
+    .bookmarked .bookmarkedSecContainer .bookmarkedContainer .singleBookmarked .bookmarkedInfo .bookmarkedTitleEvent .bookmarkedDetails {
+        font-size: 14px;
+        transform: translateY(-2.5px);
+    }
+
+    .bookmarked .bookmarkedSecContainer .bookmarkedContainer .singleBookmarked .bookmarkedInfo .bookmarkedTitleEvent .bookmarkedDetails p {
+        font-size: 14px;
+        line-height: 1.5rem;
+    }
+
+    .bookmarked .bookmarkedSecContainer .bookmarkedContainer .singleBookmarked .bookmarkedInfo .unbookmarkBtn {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 1490px) {
+    .bookmarked .bookmarkedSecContainer .bookmarkedContainer .singleBookmarked .bookmarkedInfo .bookmarkedTitleEvent {
+        font-size: 20px;
+    }
+
+    .bookmarked .bookmarkedSecContainer .bookmarkedContainer .singleBookmarked .bookmarkedInfo .bookmarkedTitleEvent .bookmarkedDetails p {
+        font-size: 15px;
+    }
+
+    .bookmarked .bookmarkedSecContainer .bookmarkedContainer .singleBookmarked .bookmarkedInfo .unbookmarkBtn {
+        font-size: 15px;
+        width: max-content;
+    }
+}

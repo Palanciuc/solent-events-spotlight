@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bf2dfa67.css",
+    "main.js": "/static/js/main.9b075f49.js",
+    "static/js/787.519e83c2.chunk.js": "/static/js/787.519e83c2.chunk.js",
+    "static/media/Solent-Conf-Centre-1.jpg": "/static/media/Solent-Conf-Centre-1.bd5ed1bc008401ab638c.jpg",
+    "static/media/solentPicture.jpeg": "/static/media/solentPicture.536502588deea1a7e99d.jpeg",
+    "static/media/event6.jpeg": "/static/media/event6.d23c21a86fbd01233ed3.jpeg",
+    "static/media/event3.jpeg": "/static/media/event3.2aec44faf5cba928f56e.jpeg",
+    "static/media/event4.png": "/static/media/event4.44b0750a0802e443151d.png",
+    "static/media/event2.jpeg": "/static/media/event2.82e3aebe76f64a94278f.jpeg",
+    "static/media/event1.jpeg": "/static/media/event1.0a01e0e91147b0bcf0cb.jpeg",
+    "static/media/event5.jpeg": "/static/media/event5.bc04cc2b8e899a85f0ee.jpeg",
+    "index.html": "/index.html",
+    "main.bf2dfa67.css.map": "/static/css/main.bf2dfa67.css.map",
+    "main.9b075f49.js.map": "/static/js/main.9b075f49.js.map",
+    "787.519e83c2.chunk.js.map": "/static/js/787.519e83c2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf2dfa67.css",
+    "static/js/main.9b075f49.js"
+  ]
+}
